@@ -1,0 +1,23 @@
+{
+  "name": "openzirndorf-design-system",
+  "private": true,
+  "packageManager": "pnpm@10.32.1",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "storybook": "pnpm --filter @openzirndorf/storybook storybook",
+    "build-storybook": "pnpm --filter @openzirndorf/storybook build-storybook",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.6",
+    "@changesets/cli": "^2.30.0",
+    "turbo": "^2.8.16",
+    "typescript": "^5.9.3"
+  }
+}

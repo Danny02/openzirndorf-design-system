@@ -1,0 +1,6 @@
+node_modules
+.turbo
+dist
+coverage
+storybook-static
+.DS_Store

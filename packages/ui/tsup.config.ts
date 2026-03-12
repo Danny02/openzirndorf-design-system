@@ -5,6 +5,10 @@ export default defineConfig({
   format: ["esm", "cjs"],
   dts: true,
   clean: true,
+  loader: {
+    ".png": "copy",
+    ".webp": "copy",
+  },
   splitting: false,
   sourcemap: true,
   external: ["react", "react-dom"],

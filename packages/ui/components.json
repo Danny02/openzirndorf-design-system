@@ -14,6 +14,7 @@
     "components": "@openzirndorf/ui/components",
     "hooks": "@openzirndorf/ui/hooks",
     "lib": "@openzirndorf/ui/lib",
+    "utils": "@openzirndorf/ui/lib/utils",
     "ui": "@openzirndorf/ui/components/ui"
   }
 }

@@ -13,6 +13,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@openzirndorf/brand/*": ["packages/brand/src/assets/*"],
       "@openzirndorf/ui": ["packages/ui/src/index.ts"],
       "@openzirndorf/ui/*": ["packages/ui/src/*"]
     }

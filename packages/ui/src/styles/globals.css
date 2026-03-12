@@ -3,22 +3,88 @@
 @source "../**/*.{ts,tsx}";
 
 :root {
-  --background: oklch(0.985 0.002 95);
-  --foreground: oklch(0.2 0.015 95);
-  --card: oklch(0.995 0.002 95);
-  --card-foreground: oklch(0.2 0.015 95);
-  --primary: oklch(0.49 0.14 152);
-  --primary-foreground: oklch(0.98 0.01 145);
-  --secondary: oklch(0.93 0.01 95);
-  --secondary-foreground: oklch(0.3 0.02 95);
-  --muted: oklch(0.95 0.01 95);
-  --muted-foreground: oklch(0.49 0.02 90);
-  --accent: oklch(0.92 0.03 148);
-  --accent-foreground: oklch(0.25 0.02 145);
-  --border: oklch(0.88 0.01 95);
-  --input: oklch(0.88 0.01 95);
-  --ring: oklch(0.59 0.12 152);
+  --green: #2d8f0f;
+  --green-hover: #267a0c;
+  --green-light: #eef7e6;
+  --green-dark: #1a5208;
+  --orange: #d96020;
+  --orange-light: #fff4eb;
+  --blue: #0969da;
+  --blue-light: #e8f4ff;
+  --text: #0d1117;
+  --text-muted: #6b7280;
+  --bg: #ffffff;
+  --bg-alt: #f6f8fa;
+  --background: var(--bg);
+  --foreground: var(--text);
+  --card: #ffffff;
+  --card-foreground: var(--text);
+  --popover: #ffffff;
+  --popover-foreground: var(--text);
+  --primary: var(--green);
+  --primary-foreground: #ffffff;
+  --secondary: var(--bg-alt);
+  --secondary-foreground: var(--text);
+  --muted: var(--bg-alt);
+  --muted-foreground: var(--text-muted);
+  --accent: var(--bg-alt);
+  --accent-foreground: var(--text);
+  --destructive: #d92c20;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: var(--green);
+  --sidebar: #ffffff;
+  --sidebar-foreground: var(--text);
+  --sidebar-primary: var(--green);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--bg-alt);
+  --sidebar-accent-foreground: var(--text);
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: var(--green);
+  --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.08);
+  --shadow: 0 4px 16px rgb(0 0 0 / 0.08), 0 1px 4px rgb(0 0 0 / 0.04);
+  --shadow-hover: 0 8px 32px rgb(0 0 0 / 0.12), 0 2px 8px rgb(0 0 0 / 0.06);
+  --container: min(1160px, calc(100% - 2.5rem));
+  --transition-base: 0.2s ease;
+  --radius-sm: 0.5rem;
   --radius: 0.875rem;
+  --radius-lg: 1.5rem;
+}
+
+.dark {
+  --text: #f5f7fa;
+  --text-muted: #9aa4b2;
+  --bg: #0f1419;
+  --bg-alt: #171d25;
+  --background: var(--bg);
+  --foreground: var(--text);
+  --card: #151b23;
+  --card-foreground: var(--text);
+  --popover: #151b23;
+  --popover-foreground: var(--text);
+  --primary: #58b22f;
+  --primary-foreground: #f5fff1;
+  --secondary: #1b232d;
+  --secondary-foreground: var(--text);
+  --muted: var(--bg-alt);
+  --muted-foreground: var(--text-muted);
+  --accent: var(--bg-alt);
+  --accent-foreground: var(--text);
+  --destructive: #ff6b5f;
+  --border: #2a3441;
+  --input: #2a3441;
+  --ring: #58b22f;
+  --sidebar: #121821;
+  --sidebar-foreground: var(--text);
+  --sidebar-primary: #58b22f;
+  --sidebar-primary-foreground: #f5fff1;
+  --sidebar-accent: #171d25;
+  --sidebar-accent-foreground: var(--text);
+  --sidebar-border: #2a3441;
+  --sidebar-ring: #58b22f;
+  --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.28);
+  --shadow: 0 10px 30px rgb(0 0 0 / 0.32);
+  --shadow-hover: 0 18px 48px rgb(0 0 0 / 0.38);
 }
 
 @theme inline {
@@ -26,6 +92,8 @@
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
@@ -34,9 +102,27 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-brand-green: var(--green);
+  --color-brand-green-hover: var(--green-hover);
+  --color-brand-green-light: var(--green-light);
+  --color-brand-green-dark: var(--green-dark);
+  --color-brand-orange: var(--orange);
+  --color-brand-orange-light: var(--orange-light);
+  --color-brand-blue: var(--blue);
+  --color-brand-blue-light: var(--blue-light);
+  --spacing-container: var(--container);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -50,6 +136,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: "Instrument Sans", "Helvetica Neue", sans-serif;
+    font-family:
+      "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
 }

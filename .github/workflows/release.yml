@@ -1,16 +1,17 @@
-name: Release
+name: Publish Packages
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
   release:
+    # GitHub Packages publishing is disabled until the repository moves to the
+    # openzirndorf namespace and package scope/owner alignment is resolved.
+    if: false
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      packages: write
       pull-requests: write
 
     steps:
@@ -27,10 +28,14 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-          registry-url: https://registry.npmjs.org
+          scope: "@openzirndorf"
+          registry-url: https://npm.pkg.github.com
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Validate workspace
+        run: pnpm lint && pnpm typecheck && pnpm test
 
       - name: Create release PR or publish
         uses: changesets/action@v1
@@ -39,4 +44,4 @@ jobs:
           publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,11 +1,34 @@
-import { Button, PageHeader } from "@openzirndorf/ui";
+import { Button } from "@openzirndorf/ui";
 import type { Meta, StoryObj } from "@storybook/react";
+import { Plus } from "lucide-react";
 
 const meta = {
   title: "Foundation/Button",
   component: Button,
   args: {
     children: "Book a visit",
+  },
+  argTypes: {
+    variant: {
+      control: "select",
+      options: [
+        "default",
+        "secondary",
+        "outline",
+        "destructive",
+        "ghost",
+        "link",
+        "white",
+        "outlineWhite",
+      ],
+    },
+    size: {
+      control: "select",
+      options: ["default", "lg", "icon"],
+    },
+    asChild: {
+      control: "boolean",
+    },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Button>;
@@ -23,19 +46,42 @@ export const Outline: Story = {
   },
 };
 
-export const WithPattern: Story = {
-  render: () => (
-    <div className="w-[720px] space-y-6">
-      <PageHeader
-        eyebrow="Open Zirndorf"
-        title="A shared library for every civic touchpoint"
-        description="Use primitives for consistency and patterns for the recurring sections your apps share."
-        actionLabel="Explore components"
-      />
-      <div className="flex gap-4">
-        <Button>Primary action</Button>
-        <Button variant="secondary">Secondary action</Button>
-      </div>
-    </div>
-  ),
+export const Secondary: Story = {
+  args: {
+    variant: "secondary",
+    children: "More details",
+  },
+};
+
+export const Destructive: Story = {
+  args: {
+    variant: "destructive",
+    children: "Delete request",
+  },
+};
+
+export const Large: Story = {
+  args: {
+    size: "lg",
+    children: "Get started",
+  },
+};
+
+export const WithLeadingIcon: Story = {
+  args: {
+    children: (
+      <>
+        <Plus />
+        New request
+      </>
+    ),
+  },
+};
+
+export const IconOnly: Story = {
+  args: {
+    size: "icon",
+    "aria-label": "Create request",
+    children: <Plus />,
+  },
 };

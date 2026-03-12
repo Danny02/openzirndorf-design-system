@@ -13,12 +13,14 @@
   },
   "dependencies": {
     "@openzirndorf/ui": "workspace:*",
+    "lucide-react": "^0.577.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^10.2.17",
     "@storybook/addon-docs": "^10.2.17",
+    "@storybook/addon-themes": "^10.2.17",
     "@storybook/react": "^10.2.17",
     "@storybook/react-vite": "^10.2.17",
     "@tailwindcss/vite": "^4.2.1",

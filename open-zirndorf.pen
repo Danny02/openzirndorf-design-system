@@ -4501,161 +4501,186 @@
     },
     {
       "type": "frame",
-      "id": "ug3IX",
-      "x": 4641,
-      "y": -396,
-      "name": "openzirndorf-homepage-rebuild",
-      "theme": {
-        "Mode": "Light"
-      },
-      "width": 1440,
-      "fill": "#f5f6f1",
+      "id": "4uJDZ",
+      "x": 3099,
+      "y": 113,
+      "name": "openzirndorf-patterns-showcase",
+      "width": 1512,
+      "fill": "#f1f7ec",
       "layout": "vertical",
+      "gap": 28,
+      "padding": 36,
       "children": [
         {
           "type": "frame",
-          "id": "W8NG3",
-          "name": "Header",
+          "id": "m6Sh1",
+          "name": "Pattern Inventory",
           "width": "fill_container",
-          "height": 54,
-          "fill": "#f5f6f1",
+          "fill": "#ffffff",
+          "cornerRadius": 28,
           "stroke": {
             "align": "inside",
-            "thickness": {
-              "bottom": 1
-            },
-            "fill": "$--border"
+            "thickness": 1,
+            "fill": "#dce6d7"
           },
+          "layout": "vertical",
+          "gap": 20,
           "padding": [
-            10,
-            20
+            28,
+            28,
+            32,
+            28
           ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
           "children": [
             {
+              "type": "text",
+              "id": "vS62F",
+              "name": "eyebrow",
+              "fill": "#6b7280",
+              "content": "PATTERN INVENTORY",
+              "lineHeight": 1.2,
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "i50cZ",
+              "name": "title",
+              "fill": "#0d1117",
+              "content": "OpenZirndorf patterns showcase",
+              "lineHeight": 1.1,
+              "fontFamily": "Inter",
+              "fontSize": 32,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "Lam6c",
+              "name": "body",
+              "fill": "#4b5563",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Clean source-of-truth page composed from the existing website patterns. This surface now preserves the site header, hero/page header, pillar cards, feature cards, event cards and footer, while also surfacing the missing brand logo and mascot assets.",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
               "type": "frame",
-              "id": "dxn94",
-              "name": "Header Left",
-              "gap": 24,
-              "alignItems": "center",
+              "id": "veXRk",
+              "name": "Asset Row",
+              "width": "fill_container",
+              "gap": 16,
               "children": [
                 {
                   "type": "frame",
-                  "id": "sV21u",
-                  "name": "Brand",
-                  "alignItems": "center",
+                  "id": "gYEqH",
+                  "name": "Brand Logo Asset",
+                  "width": "fill_container",
+                  "fill": "#f7fbf3",
+                  "cornerRadius": 20,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#d8e3d0"
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 18,
                   "children": [
                     {
                       "type": "rectangle",
-                      "id": "Ck9XP",
-                      "name": "Header Logo",
+                      "id": "2nNMq",
+                      "name": "Brand Logo",
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "images/image-1.png",
+                        "url": "packages/brand/src/assets/logos/logo-mark-256.png",
                         "mode": "fill"
                       },
-                      "width": 14,
-                      "height": 18
+                      "width": 220,
+                      "height": 220
+                    },
+                    {
+                      "type": "text",
+                      "id": "AdWpo",
+                      "name": "logoText",
+                      "fill": "#4b5563",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "BrandLogo asset used for header, navigation, footer and hero sizes.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "LaoLl",
-                  "name": "Nav",
-                  "gap": 20,
-                  "alignItems": "center",
+                  "id": "jpPKG",
+                  "name": "Mascot Assets",
+                  "width": "fill_container",
+                  "fill": "#f7fbf3",
+                  "cornerRadius": 20,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#d8e3d0"
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 18,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "tEhjr",
-                      "name": "nav1",
-                      "fill": "$--muted-foreground",
-                      "content": "Was wir sind",
-                      "lineHeight": 1.4,
-                      "fontFamily": "Inter",
-                      "fontSize": 13,
-                      "fontWeight": "500"
+                      "type": "frame",
+                      "id": "eLFgR",
+                      "name": "Mascot Row",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "B306u",
+                          "name": "Mascot Nico",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "packages/brand/src/assets/mascots/nico.png",
+                            "mode": "fill"
+                          },
+                          "width": 160,
+                          "height": 160
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "mCjak",
+                          "name": "Mascot Quirin",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "packages/brand/src/assets/mascots/quirin.png",
+                            "mode": "fill"
+                          },
+                          "width": 160,
+                          "height": 160
+                        }
+                      ]
                     },
                     {
                       "type": "text",
-                      "id": "0fcBh",
-                      "name": "nav2",
-                      "fill": "$--muted-foreground",
-                      "content": "Tools",
-                      "lineHeight": 1.4,
+                      "id": "L8Huz",
+                      "name": "mascotText",
+                      "fill": "#4b5563",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Mascot family added back into the source surface. Current asset set includes Fynn, Kreiselix, Nico, Quirin and Tuxi.",
+                      "lineHeight": 1.45,
                       "fontFamily": "Inter",
-                      "fontSize": 13,
+                      "fontSize": 14,
                       "fontWeight": "500"
-                    },
-                    {
-                      "type": "text",
-                      "id": "MzIAd",
-                      "name": "nav3",
-                      "fill": "$--muted-foreground",
-                      "content": "Termine",
-                      "lineHeight": 1.4,
-                      "fontFamily": "Inter",
-                      "fontSize": 13,
-                      "fontWeight": "500"
-                    },
-                    {
-                      "type": "text",
-                      "id": "FSdp4",
-                      "name": "nav4",
-                      "fill": "$--muted-foreground",
-                      "content": "Mitmachen",
-                      "lineHeight": 1.4,
-                      "fontFamily": "Inter",
-                      "fontSize": 13,
-                      "fontWeight": "500"
-                    },
-                    {
-                      "type": "text",
-                      "id": "48kNq",
-                      "name": "nav5",
-                      "fill": "$--muted-foreground",
-                      "content": "Medien",
-                      "lineHeight": 1.4,
-                      "fontFamily": "Inter",
-                      "fontSize": 13,
-                      "fontWeight": "500"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "TL9hR",
-              "name": "Nav Right",
-              "gap": 16,
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "11V8N",
-                  "name": "Header CTA",
-                  "fill": "$--primary",
-                  "cornerRadius": 9999,
-                  "padding": [
-                    11,
-                    18
-                  ],
-                  "justifyContent": "center",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "zKDTe",
-                      "fill": "$--primary-foreground",
-                      "content": "Mitmachen",
-                      "lineHeight": 1.2,
-                      "fontFamily": "Inter",
-                      "fontSize": 13,
-                      "fontWeight": "600"
                     }
                   ]
                 }
@@ -4665,113 +4690,150 @@
         },
         {
           "type": "frame",
-          "id": "yRQNT",
-          "name": "Hero",
+          "id": "QyDo5",
+          "name": "Website Pattern Page",
+          "clip": true,
           "width": "fill_container",
-          "fill": "#f5f6f1",
+          "fill": "#ffffff",
+          "cornerRadius": 32,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#dce6d7"
+          },
           "layout": "vertical",
-          "gap": 24,
-          "padding": [
-            72,
-            32
-          ],
-          "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "5wEy2",
-              "name": "Hero Inner",
-              "width": 840,
-              "layout": "vertical",
-              "gap": 20,
+              "id": "1wtf7",
+              "name": "header",
+              "width": "fill_container",
+              "height": 54,
+              "fill": "$--background",
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "$--border"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "justifyContent": "space_between",
               "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
-                  "id": "XpEdx",
-                  "name": "Hero Badge",
-                  "fill": "$--accent",
-                  "cornerRadius": 9999,
-                  "padding": [
-                    8,
-                    18
-                  ],
-                  "justifyContent": "center",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "Cpj3u",
-                      "fill": "$--accent-foreground",
-                      "content": "🌱 Civic Tech aus Zirndorf",
-                      "lineHeight": 1.2,
-                      "fontFamily": "Inter",
-                      "fontSize": 12,
-                      "fontWeight": "700"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "LRhAA",
-                  "name": "Hero Title",
-                  "width": 760,
-                  "layout": "vertical",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "7aG0O",
-                      "fill": "$--foreground",
-                      "content": "Digitale Möglichkeiten",
-                      "lineHeight": 1.02,
-                      "textAlign": "center",
-                      "fontFamily": "Inter",
-                      "fontSize": 64,
-                      "fontWeight": "700"
-                    },
-                    {
-                      "type": "text",
-                      "id": "5ELTw",
-                      "fill": "$--primary",
-                      "content": "für Zirndorf",
-                      "lineHeight": 1.02,
-                      "textAlign": "center",
-                      "fontFamily": "Inter",
-                      "fontSize": 64,
-                      "fontWeight": "700"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "28lE2",
-                  "name": "heroBody",
-                  "fill": "$--muted-foreground",
-                  "textGrowth": "fixed-width",
-                  "width": 620,
-                  "content": "Wir sind eine Gruppe aus Zirndorf, die Dinge einfacher machen will. Lokale Politik soll für alle verständlich sein und digitale Mittel sollen jeder Person helfen, mitzumachen.",
-                  "lineHeight": 1.7,
-                  "textAlign": "center",
-                  "fontFamily": "Inter",
-                  "fontSize": 18,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "frame",
-                  "id": "Wh543",
-                  "name": "Hero Buttons",
-                  "gap": 14,
+                  "id": "pRBUF",
+                  "name": "Header Left",
+                  "gap": 24,
                   "alignItems": "center",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "bZinl",
-                      "name": "Hero CTA Primary",
+                      "id": "JuzMa",
+                      "name": "Brand",
+                      "fill": "$--background",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "Df1CP",
+                          "name": "Header Logo",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "packages/brand/src/assets/logos/logo.png",
+                            "mode": "fill"
+                          },
+                          "width": 14,
+                          "height": 18
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "A0tyN",
+                      "name": "Nav",
+                      "gap": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "3ksbz",
+                          "name": "nav1",
+                          "fill": "$--muted-foreground",
+                          "content": "Was wir sind",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Fr6if",
+                          "name": "nav2",
+                          "fill": "$--muted-foreground",
+                          "content": "Tools",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "eWsq5",
+                          "name": "nav3",
+                          "fill": "$--muted-foreground",
+                          "content": "Termine",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NzWK1",
+                          "name": "nav4",
+                          "fill": "$--muted-foreground",
+                          "content": "Mitmachen",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NZJ4r",
+                          "name": "nav5",
+                          "fill": "$--muted-foreground",
+                          "content": "Medien",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tnOY8",
+                  "name": "Nav Right",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "63RBM",
+                      "name": "Header CTA",
                       "fill": "$--primary",
                       "cornerRadius": 9999,
                       "padding": [
-                        10,
+                        11,
                         18
                       ],
                       "justifyContent": "center",
@@ -4779,43 +4841,1209 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "OTNhj",
+                          "id": "RNioF",
                           "fill": "$--primary-foreground",
-                          "content": "Jetzt mitmachen",
+                          "content": "Mitmachen",
                           "lineHeight": 1.2,
                           "fontFamily": "Inter",
-                          "fontSize": 14,
+                          "fontSize": 13,
                           "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IwceZ",
+              "name": "hero",
+              "width": "fill_container",
+              "fill": "$--background",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                72,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "I4GWi",
+                  "name": "Hero Inner",
+                  "width": 840,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fTdxa",
+                      "name": "Hero Badge",
+                      "fill": "$--accent",
+                      "cornerRadius": 9999,
+                      "padding": [
+                        8,
+                        18
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ytNHR",
+                          "fill": "$--accent-foreground",
+                          "content": "🌱 Civic Tech aus Zirndorf",
+                          "lineHeight": 1.2,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "700"
                         }
                       ]
                     },
                     {
                       "type": "frame",
-                      "id": "d0TkW",
-                      "name": "Hero CTA Secondary",
-                      "fill": "$--background",
-                      "cornerRadius": 9999,
+                      "id": "HoCjI",
+                      "name": "Hero Title",
+                      "width": 760,
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GTvW5",
+                          "fill": "$--foreground",
+                          "content": "Digitale Möglichkeiten",
+                          "lineHeight": 1.02,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 64,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RxAWz",
+                          "fill": "$--primary",
+                          "content": "für Zirndorf",
+                          "lineHeight": 1.02,
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 64,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "PkwvX",
+                      "name": "heroBody",
+                      "fill": "$--muted-foreground",
+                      "textGrowth": "fixed-width",
+                      "width": 620,
+                      "content": "Wir sind eine Gruppe aus Zirndorf, die Dinge einfacher machen will. Lokale Politik soll für alle verständlich sein und digitale Mittel sollen jeder Person helfen, mitzumachen.",
+                      "lineHeight": 1.7,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iOrYa",
+                      "name": "Hero Buttons",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tjwky",
+                          "name": "Hero CTA Primary",
+                          "fill": "$--primary",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            10,
+                            18
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "zBwoA",
+                              "fill": "$--primary-foreground",
+                              "content": "Jetzt mitmachen",
+                              "lineHeight": 1.2,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "nnnOz",
+                          "name": "Hero CTA Secondary",
+                          "fill": "$--background",
+                          "cornerRadius": 9999,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$--border"
+                          },
+                          "padding": [
+                            10,
+                            18
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PlSf5",
+                              "fill": "$--foreground",
+                              "content": "Unsere Tools",
+                              "lineHeight": 1.2,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DEaqA",
+                      "name": "Hero Tags",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "sZJi1",
+                          "name": "c1",
+                          "fill": "$--background",
+                          "cornerRadius": 9999,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$--border"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "6odSK",
+                              "fill": "$--muted-foreground",
+                              "content": "🔓",
+                              "lineHeight": 1,
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "RWKYn",
+                              "fill": "$--muted-foreground",
+                              "content": "Open Source",
+                              "lineHeight": 1.2,
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Xt0gs",
+                          "name": "c2",
+                          "fill": "$--background",
+                          "cornerRadius": 9999,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$--border"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "H7Rl3",
+                              "fill": "$--muted-foreground",
+                              "content": "📍",
+                              "lineHeight": 1,
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "L0CWn",
+                              "fill": "$--muted-foreground",
+                              "content": "Aus Zirndorf",
+                              "lineHeight": 1.2,
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "QIdXy",
+                          "name": "c3",
+                          "fill": "$--background",
+                          "cornerRadius": 9999,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$--border"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VrU0Q",
+                              "fill": "$--muted-foreground",
+                              "content": "🏛️",
+                              "lineHeight": 1,
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "QckTZ",
+                              "fill": "$--muted-foreground",
+                              "content": "Überparteilich",
+                              "lineHeight": 1.2,
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "bpnmN",
+                          "name": "c4",
+                          "fill": "$--background",
+                          "cornerRadius": 9999,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$--border"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "sVPO2",
+                              "fill": "$--muted-foreground",
+                              "content": "🤝",
+                              "lineHeight": 1,
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "4OUyU",
+                              "fill": "$--muted-foreground",
+                              "content": "Für alle offen",
+                              "lineHeight": 1.2,
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DNYIr",
+              "name": "overview",
+              "width": "fill_container",
+              "fill": "$--background",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                56,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2MAkT",
+                  "name": "overTitle",
+                  "fill": "$--foreground",
+                  "content": "Was ist OpenZirndorf?",
+                  "lineHeight": 1.08,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 30,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "SXgTK",
+                  "name": "overBody",
+                  "fill": "$--muted-foreground",
+                  "content": "Ein kurzer Überblick für alle, die uns noch nicht kennen.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "YA3w7",
+                  "name": "Overview Grid",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "mksle",
+                      "name": "vc1",
+                      "width": "fill_container",
+                      "fill": "$--card",
+                      "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
                         "fill": "$--border"
                       },
+                      "layout": "vertical",
+                      "gap": 12,
                       "padding": [
-                        10,
-                        18
+                        16,
+                        16,
+                        18,
+                        16
                       ],
-                      "justifyContent": "center",
-                      "alignItems": "center",
                       "children": [
                         {
                           "type": "text",
-                          "id": "9TW1D",
+                          "id": "6n0WX",
+                          "name": "icon",
                           "fill": "$--foreground",
-                          "content": "Unsere Tools",
+                          "content": "🗳️",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZUzSW",
+                          "name": "title",
+                          "fill": "$--foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Wir machen digitales nutzbar",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "52bLF",
+                          "name": "body",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Ob fertige Tools sinnvoll eingesetzt, neue Anwendungen entwickelt oder Schulungen angeboten werden: wir schauen, was gebraucht wird, und machen es für alle zugänglich.",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kmxw6",
+                      "name": "vc2",
+                      "width": "fill_container",
+                      "fill": "$--card",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--border"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        16,
+                        16,
+                        18,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fNAwG",
+                          "name": "icon",
+                          "fill": "$--foreground",
+                          "content": "🔎",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ysu6R",
+                          "name": "title",
+                          "fill": "$--foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Wir arbeiten offen",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pqm4f",
+                          "name": "body",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Was wir tun, kann jede Person nachvollziehen. Unsere Projekte, Ergebnisse und Entscheidungen sind öffentlich einsehbar.",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UE4DH",
+                      "name": "vc3",
+                      "width": "fill_container",
+                      "fill": "$--card",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--border"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        16,
+                        16,
+                        18,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gGHCh",
+                          "name": "icon",
+                          "fill": "$--foreground",
+                          "content": "🏡",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "J0zMr",
+                          "name": "title",
+                          "fill": "$--foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Wir sind lokal verwurzelt",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "3mOHf",
+                          "name": "body",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Wir kommen aus Zirndorf, kennen die lokale Politik und entwickeln Lösungen, die konkret zu unserer Stadt passen.",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LaH3P",
+              "name": "tools",
+              "width": "fill_container",
+              "fill": "$--background",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                56,
+                32
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "7S1R9",
+                  "name": "toolsTitle",
+                  "fill": "$--foreground",
+                  "content": "Unsere bisherigen Tools",
+                  "lineHeight": 1.08,
+                  "fontFamily": "Inter",
+                  "fontSize": 30,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "dzVns",
+                  "name": "toolsBody",
+                  "fill": "$--muted-foreground",
+                  "content": "Beispiele aus der Praxis. Open source, verständlich und frei zugänglich.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "RIaFH",
+                  "name": "Tools Grid",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HeZZu",
+                      "name": "t1",
+                      "width": "fill_container",
+                      "fill": "#dce9f7",
+                      "cornerRadius": 18,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--border"
+                      },
+                      "layout": "vertical",
+                      "gap": 14,
+                      "padding": [
+                        18,
+                        18,
+                        20,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "8sadn",
+                          "name": "Tool Card Head",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "A01Kj",
+                              "name": "Icon Badge",
+                              "width": 42,
+                              "height": 42,
+                              "fill": "$--accent",
+                              "cornerRadius": 12,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "NoXZF",
+                                  "fill": "$--foreground",
+                                  "content": "📊",
+                                  "lineHeight": 1,
+                                  "textAlign": "center",
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "7a83i",
+                              "fill": "$--muted-foreground",
+                              "content": "→",
+                              "lineHeight": 1,
+                              "fontFamily": "Inter",
+                              "fontSize": 22,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "Yvpiq",
+                          "name": "category",
+                          "fill": "#3b6ca8",
+                          "content": "KI-ANALYSE",
+                          "lineHeight": 1.2,
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "V7A0x",
+                          "name": "title",
+                          "fill": "$--foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Wahlanalyse Zirndorf 2026",
+                          "lineHeight": 1.15,
+                          "fontFamily": "Inter",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "drHwk",
+                          "name": "body",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "KI-gestützte Analyse zur Kommunalwahl 2026. Fragenkatalog, Methodik und alle Ergebnisse sind vollständig veröffentlicht.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cDqC6",
+                      "name": "t2",
+                      "width": "fill_container",
+                      "fill": "#f3e4d8",
+                      "cornerRadius": 18,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--border"
+                      },
+                      "layout": "vertical",
+                      "gap": 14,
+                      "padding": [
+                        18,
+                        18,
+                        20,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HdeUR",
+                          "name": "Tool Card Head",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "UCzEr",
+                              "name": "Icon Badge",
+                              "width": 42,
+                              "height": 42,
+                              "fill": "#f7eadf",
+                              "cornerRadius": 12,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "yTgPG",
+                                  "fill": "$--foreground",
+                                  "content": "💡",
+                                  "lineHeight": 1,
+                                  "textAlign": "center",
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "BS1Lr",
+                              "fill": "$--muted-foreground",
+                              "content": "→",
+                              "lineHeight": 1,
+                              "fontFamily": "Inter",
+                              "fontSize": 22,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "3Octi",
+                          "name": "category",
+                          "fill": "#c9743d",
+                          "content": "BÜRGERBETEILIGUNG",
+                          "lineHeight": 1.2,
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "u66OY",
+                          "name": "title",
+                          "fill": "$--foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Ideenbörse für Zirndorf",
+                          "lineHeight": 1.15,
+                          "fontFamily": "Inter",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "arxEF",
+                          "name": "body",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Eine offene Plattform, auf der Bürgerinnen und Bürger Ideen für Zirndorf einreichen, diskutieren und gemeinsam weiterentwickeln können.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YMUDb",
+              "name": "events",
+              "width": "fill_container",
+              "fill": "$--background",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                64,
+                32
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "U1H4x",
+                  "name": "eventsTitle",
+                  "fill": "$--foreground",
+                  "content": "Nächste Termine",
+                  "lineHeight": 1.06,
+                  "fontFamily": "Inter",
+                  "fontSize": 46,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "9aLQc",
+                  "name": "eventsBody",
+                  "fill": "$--muted-foreground",
+                  "content": "Lerne uns unverbindlich kennen. Alle sind willkommen.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "2JpSY",
+                  "name": "Event List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "7Fvm1",
+                      "name": "Event Card",
+                      "width": "fill_container",
+                      "fill": "$--card",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$--border"
+                      },
+                      "gap": 20,
+                      "padding": [
+                        20,
+                        22
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ve8sh",
+                          "name": "Event Date",
+                          "gap": 18,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "jhEGh",
+                              "name": "Date Badge",
+                              "width": 72,
+                              "height": 72,
+                              "fill": "$--accent",
+                              "cornerRadius": 16,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "aVnOe",
+                                  "fill": "$--accent-foreground",
+                                  "content": "30.3.",
+                                  "lineHeight": 1,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 24,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "RisJK",
+                                  "fill": "$--accent-foreground",
+                                  "content": "Montag",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "cZjuz",
+                              "name": "Event Meta",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "RvXbv",
+                                  "name": "eventTitle",
+                                  "fill": "$--foreground",
+                                  "content": "Stammtisch OpenZirndorf",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 24,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "sFEIe",
+                                  "name": "eventDesc",
+                                  "fill": "$--muted-foreground",
+                                  "content": "Hotel Knorz, Volkhardtstraße 18, 90513 Zirndorf · 19:00 Uhr",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 16,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "gEPqz",
+                          "name": "eventLink",
+                          "fill": "$--primary",
+                          "content": "DETAILS",
                           "lineHeight": 1.2,
                           "fontFamily": "Inter",
                           "fontSize": 14,
-                          "fontWeight": "600"
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hi8zG",
+              "name": "join",
+              "width": "fill_container",
+              "fill": "#f6f8fa",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                56,
+                32
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IWtCr",
+                  "name": "joinTitle",
+                  "fill": "#0d1117",
+                  "content": "Einstieg leicht gemacht",
+                  "lineHeight": 1.08,
+                  "fontFamily": "Inter",
+                  "fontSize": 30,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "pJghc",
+                  "name": "joinBody",
+                  "fill": "#6b7280",
+                  "content": "Community- und Kontaktmuster für Beteiligung, Einstieg und direkte Ansprache.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "fPBvf",
+                  "name": "Participation Grid",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "y6YrR",
+                      "name": "joinCard1",
+                      "width": "fill_container",
+                      "fill": "#f9f5ff",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#e9dbff"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        16,
+                        16,
+                        18,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rOD0q",
+                          "name": "icon",
+                          "fill": "$--foreground",
+                          "content": "💬",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "5ZPig",
+                          "name": "title",
+                          "fill": "$--foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Slack beitreten",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XBgJk",
+                          "name": "body",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Fragen stellen, mitlesen und erste Kontakte knuepfen, ohne technisches Vorwissen.",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ylfYJ",
+                      "name": "joinCard2",
+                      "width": "fill_container",
+                      "fill": "#fff8f0",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#f2d9bf"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        16,
+                        16,
+                        18,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KhfQq",
+                          "name": "icon",
+                          "fill": "$--foreground",
+                          "content": "💡",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZJASy",
+                          "name": "title",
+                          "fill": "$--foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Ideenboerse",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "w2uBs",
+                          "name": "body",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Vorschlaege einreichen, diskutieren und gemeinsam weiterentwickeln.",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kvlJR",
+                      "name": "joinCard3",
+                      "width": "fill_container",
+                      "fill": "#ffffff",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#d7dde4"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        16,
+                        16,
+                        18,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Il3Kw",
+                          "name": "icon",
+                          "fill": "$--foreground",
+                          "content": "💻",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gYNPr",
+                          "name": "title",
+                          "fill": "$--foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Code auf GitHub",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ilhzW",
+                          "name": "body",
+                          "fill": "$--muted-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Alle Projekte, Werkzeuge und Datengrundlagen offen zugaenglich.",
+                          "lineHeight": 1.45,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -4823,946 +6051,100 @@
                 },
                 {
                   "type": "frame",
-                  "id": "zbXC0",
-                  "name": "Hero Tags",
-                  "gap": 10,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "id": "4jJXL",
-                      "type": "ref",
-                      "ref": "IWo9p",
-                      "name": "c1",
-                      "descendants": {
-                        "jScS8": {
-                          "content": "🔓"
-                        },
-                        "Ka1jT": {
-                          "content": "Open Source"
-                        }
-                      }
-                    },
-                    {
-                      "id": "kXcLa",
-                      "type": "ref",
-                      "ref": "IWo9p",
-                      "name": "c2",
-                      "descendants": {
-                        "jScS8": {
-                          "content": "📍"
-                        },
-                        "Ka1jT": {
-                          "content": "Aus Zirndorf"
-                        }
-                      }
-                    },
-                    {
-                      "id": "ZVbza",
-                      "type": "ref",
-                      "ref": "IWo9p",
-                      "name": "c3",
-                      "descendants": {
-                        "jScS8": {
-                          "content": "🏛️"
-                        },
-                        "Ka1jT": {
-                          "content": "Überparteilich"
-                        }
-                      }
-                    },
-                    {
-                      "id": "pE6Hz",
-                      "type": "ref",
-                      "ref": "IWo9p",
-                      "name": "c4",
-                      "descendants": {
-                        "jScS8": {
-                          "content": "🤝"
-                        },
-                        "Ka1jT": {
-                          "content": "Für alle offen"
-                        }
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "L6jbk",
-          "name": "Overview Section",
-          "width": "fill_container",
-          "fill": "#f5f6f1",
-          "layout": "vertical",
-          "gap": 24,
-          "padding": [
-            56,
-            32
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "v6usz",
-              "name": "overTitle",
-              "fill": "$--foreground",
-              "content": "Was ist OpenZirndorf?",
-              "lineHeight": 1.08,
-              "textAlign": "center",
-              "fontFamily": "Inter",
-              "fontSize": 30,
-              "fontWeight": "800"
-            },
-            {
-              "type": "text",
-              "id": "oGxw3",
-              "name": "overBody",
-              "fill": "$--muted-foreground",
-              "content": "Ein kurzer Überblick für alle, die uns noch nicht kennen.",
-              "lineHeight": 1.5,
-              "textAlign": "center",
-              "fontFamily": "Inter",
-              "fontSize": 15,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "MQW9M",
-              "name": "Overview Grid",
-              "width": "fill_container",
-              "gap": 12,
-              "children": [
-                {
-                  "id": "96KOi",
-                  "type": "ref",
-                  "ref": "wSsOC",
+                  "id": "jiSWj",
+                  "name": "Support Banner",
                   "width": "fill_container",
-                  "name": "vc1",
-                  "descendants": {
-                    "tkDA3": {
-                      "content": "🗳️"
-                    },
-                    "1e9aX": {
-                      "content": "Wir machen digitales nutzbar"
-                    },
-                    "wlsIe": {
-                      "content": "Ob fertige Tools sinnvoll eingesetzt, neue Anwendungen entwickelt oder Schulungen angeboten werden: wir schauen, was gebraucht wird, und machen es für alle zugänglich."
-                    }
-                  }
-                },
-                {
-                  "id": "ARN20",
-                  "type": "ref",
-                  "ref": "wSsOC",
-                  "width": "fill_container",
-                  "name": "vc2",
-                  "descendants": {
-                    "tkDA3": {
-                      "content": "🔎"
-                    },
-                    "1e9aX": {
-                      "content": "Wir arbeiten offen"
-                    },
-                    "wlsIe": {
-                      "content": "Was wir tun, kann jede Person nachvollziehen. Unsere Projekte, Ergebnisse und Entscheidungen sind öffentlich einsehbar."
-                    }
-                  }
-                },
-                {
-                  "id": "nSey2",
-                  "type": "ref",
-                  "ref": "wSsOC",
-                  "width": "fill_container",
-                  "name": "vc3",
-                  "descendants": {
-                    "tkDA3": {
-                      "content": "🏡"
-                    },
-                    "1e9aX": {
-                      "content": "Wir sind lokal verwurzelt"
-                    },
-                    "wlsIe": {
-                      "content": "Wir kommen aus Zirndorf, kennen die lokale Politik und entwickeln Lösungen, die konkret zu unserer Stadt passen."
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "jb66w",
-          "name": "Tools Section",
-          "width": "fill_container",
-          "fill": "#f5f6f1",
-          "layout": "vertical",
-          "gap": 24,
-          "padding": [
-            56,
-            32
-          ],
-          "children": [
-            {
-              "type": "text",
-              "id": "cV1rN",
-              "name": "toolsTitle",
-              "fill": "$--foreground",
-              "content": "Unsere bisherigen Tools",
-              "lineHeight": 1.08,
-              "fontFamily": "Inter",
-              "fontSize": 30,
-              "fontWeight": "800"
-            },
-            {
-              "type": "text",
-              "id": "qwNou",
-              "name": "toolsBody",
-              "fill": "$--muted-foreground",
-              "content": "Beispiele aus der Praxis. Open source, verständlich und frei zugänglich.",
-              "lineHeight": 1.5,
-              "fontFamily": "Inter",
-              "fontSize": 15,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "DmPRM",
-              "name": "Tools Grid",
-              "width": "fill_container",
-              "gap": 16,
-              "children": [
-                {
-                  "id": "JKAqd",
-                  "type": "ref",
-                  "ref": "sknKY",
-                  "width": "fill_container",
-                  "fill": "#dce9f7",
-                  "name": "t1",
-                  "descendants": {
-                    "wfM7U": {
-                      "content": "📊"
-                    },
-                    "mdF9z": {
-                      "content": "KI-ANALYSE",
-                      "fill": "#3b6ca8"
-                    },
-                    "598SZ": {
-                      "content": "Wahlanalyse Zirndorf 2026"
-                    },
-                    "1C3lL": {
-                      "content": "KI-gestützte Analyse zur Kommunalwahl 2026. Fragenkatalog, Methodik und alle Ergebnisse sind vollständig veröffentlicht."
-                    }
-                  }
-                },
-                {
-                  "id": "AapcW",
-                  "type": "ref",
-                  "ref": "sknKY",
-                  "width": "fill_container",
-                  "fill": "#f3e4d8",
-                  "name": "t2",
-                  "descendants": {
-                    "GXpgP": {
-                      "fill": "#f7eadf"
-                    },
-                    "wfM7U": {
-                      "content": "💡"
-                    },
-                    "mdF9z": {
-                      "content": "BÜRGERBETEILIGUNG",
-                      "fill": "#c9743d"
-                    },
-                    "598SZ": {
-                      "content": "Ideenbörse für Zirndorf"
-                    },
-                    "1C3lL": {
-                      "content": "Eine offene Plattform, auf der Bürgerinnen und Bürger Ideen für Zirndorf einreichen, diskutieren und gemeinsam weiterentwickeln können."
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "be4ta",
-          "name": "Events Section",
-          "width": "fill_container",
-          "fill": "#f5f6f1",
-          "layout": "vertical",
-          "gap": 24,
-          "padding": [
-            64,
-            32
-          ],
-          "children": [
-            {
-              "type": "text",
-              "id": "hRn3E",
-              "name": "eventsTitle",
-              "fill": "$--foreground",
-              "content": "Nächste Termine",
-              "lineHeight": 1.06,
-              "fontFamily": "Inter",
-              "fontSize": 46,
-              "fontWeight": "800"
-            },
-            {
-              "type": "text",
-              "id": "HZubd",
-              "name": "eventsBody",
-              "fill": "$--muted-foreground",
-              "content": "Lerne uns unverbindlich kennen. Alle sind willkommen.",
-              "lineHeight": 1.5,
-              "fontFamily": "Inter",
-              "fontSize": 20,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "oiWmv",
-              "name": "Event List",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": 16,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "ML8aM",
-                  "name": "Event Card",
-                  "width": "fill_container",
-                  "fill": "$--card",
-                  "cornerRadius": 16,
-                  "stroke": {
-                    "align": "inside",
-                    "thickness": 1,
-                    "fill": "$--border"
-                  },
-                  "gap": 20,
+                  "fill": "#2d8f0f",
+                  "cornerRadius": 24,
+                  "gap": 24,
                   "padding": [
-                    20,
-                    22
+                    28,
+                    30
                   ],
                   "justifyContent": "space_between",
                   "alignItems": "center",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "gxesS",
-                      "name": "Event Date",
-                      "gap": 18,
-                      "alignItems": "center",
+                      "id": "B3VCH",
+                      "name": "Support Copy",
+                      "width": 900,
+                      "layout": "vertical",
+                      "gap": 6,
                       "children": [
                         {
-                          "type": "frame",
-                          "id": "VEzao",
-                          "name": "Date Badge",
-                          "width": 72,
-                          "height": 72,
-                          "fill": "$--accent",
-                          "cornerRadius": 16,
-                          "layout": "vertical",
-                          "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "ELXQF",
-                              "fill": "$--accent-foreground",
-                              "content": "30.3.",
-                              "lineHeight": 1,
-                              "fontFamily": "Inter",
-                              "fontSize": 24,
-                              "fontWeight": "700"
-                            },
-                            {
-                              "type": "text",
-                              "id": "mVutP",
-                              "fill": "$--accent-foreground",
-                              "content": "Montag",
-                              "lineHeight": 1.2,
-                              "fontFamily": "Inter",
-                              "fontSize": 12,
-                              "fontWeight": "600"
-                            }
-                          ]
+                          "type": "text",
+                          "id": "cUYbr",
+                          "name": "bannerTitle",
+                          "fill": "#ffffff",
+                          "content": "Du willst uns unterstuetzen?",
+                          "lineHeight": 1.25,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
                         },
                         {
-                          "type": "frame",
-                          "id": "wFcQ0",
-                          "name": "Event Meta",
-                          "layout": "vertical",
-                          "gap": 6,
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "QR0Tq",
-                              "name": "eventTitle",
-                              "fill": "$--foreground",
-                              "content": "Stammtisch OpenZirndorf",
-                              "lineHeight": 1.2,
-                              "fontFamily": "Inter",
-                              "fontSize": 24,
-                              "fontWeight": "600"
-                            },
-                            {
-                              "type": "text",
-                              "id": "h8cL8",
-                              "name": "eventDesc",
-                              "fill": "$--muted-foreground",
-                              "content": "Hotel Knorz, Volkhardtstraße 18, 90513 Zirndorf · 19:00 Uhr",
-                              "lineHeight": 1.5,
-                              "fontFamily": "Inter",
-                              "fontSize": 16,
-                              "fontWeight": "normal"
-                            }
-                          ]
+                          "type": "text",
+                          "id": "UcjIm",
+                          "name": "bannerBody",
+                          "fill": "#edf8e8",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Jede Hilfe zaehlt, ob Ideen, Kontakte, Faehigkeiten oder einfach ein guter Hinweis.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "lvWCv",
-                      "name": "eventLink",
-                      "fill": "$--primary",
-                      "content": "DETAILS",
-                      "lineHeight": 1.2,
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "700"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cCiqw",
-          "type": "ref",
-          "ref": "kX7a4",
-          "width": "fill_container",
-          "name": "f1"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "kX7a4",
-      "x": -196,
-      "y": -615,
-      "name": "Footer/Website",
-      "reusable": true,
-      "width": 1440,
-      "fill": "#07111b",
-      "layout": "vertical",
-      "gap": 22,
-      "padding": [
-        36,
-        32,
-        18,
-        32
-      ],
-      "children": [
-        {
-          "type": "frame",
-          "id": "5qEsX",
-          "name": "Footer Top",
-          "width": "fill_container",
-          "gap": 32,
-          "justifyContent": "space_between",
-          "children": [
-            {
-              "type": "frame",
-              "id": "7sj4Y",
-              "name": "Footer Brand",
-              "width": 320,
-              "layout": "vertical",
-              "gap": 10,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "6MJPU",
-                  "name": "Brand Row",
-                  "gap": 8,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "rectangle",
-                      "id": "AzDQG",
-                      "name": "Footer Logo",
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "images/image-1.png",
-                        "mode": "fill"
-                      },
-                      "width": 18,
-                      "height": 24
                     },
                     {
                       "type": "frame",
-                      "id": "tzeJt",
-                      "name": "Footer Brand Text",
+                      "id": "j4je0",
+                      "name": "Support CTA",
+                      "fill": "#ffffff",
+                      "cornerRadius": 9999,
+                      "padding": [
+                        12,
+                        22
+                      ],
+                      "justifyContent": "center",
                       "alignItems": "center",
                       "children": [
                         {
                           "type": "text",
-                          "id": "huIHI",
-                          "fill": "$--primary",
-                          "content": "open",
+                          "id": "plm81",
+                          "name": "ctaText",
+                          "fill": "#0d1117",
+                          "content": "Melde dich bei uns",
                           "lineHeight": 1.2,
                           "fontFamily": "Inter",
-                          "fontSize": 20,
-                          "fontWeight": "700"
-                        },
-                        {
-                          "type": "text",
-                          "id": "S5DIT",
-                          "fill": "#f7fbf3",
-                          "content": "zirndorf",
-                          "lineHeight": 1.2,
-                          "fontFamily": "Inter",
-                          "fontSize": 20,
-                          "fontWeight": "700"
+                          "fontSize": 14,
+                          "fontWeight": "600"
                         }
                       ]
                     }
                   ]
-                },
-                {
-                  "type": "text",
-                  "id": "Dbz3Z",
-                  "fill": "#94a3b8",
-                  "content": "Digitale Möglichkeiten für Zirndorf. Offen, lokal und praktisch.",
-                  "lineHeight": 1.45,
-                  "fontFamily": "Inter",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
                 }
               ]
             },
             {
               "type": "frame",
-              "id": "xcAF0",
-              "name": "Footer Tools",
-              "width": 180,
+              "id": "q56RV",
+              "name": "footer",
+              "width": "fill_container",
+              "height": "fit_content(219)",
+              "fill": "#07111b",
               "layout": "vertical",
-              "gap": 10,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "QsEen",
-                  "fill": "#f7fbf3",
-                  "content": "TOOLS",
-                  "lineHeight": 1.2,
-                  "fontFamily": "Inter",
-                  "fontSize": 12,
-                  "fontWeight": "700"
-                },
-                {
-                  "type": "text",
-                  "id": "Lxpmy",
-                  "fill": "#94a3b8",
-                  "content": "Wahlanalyse 2026",
-                  "lineHeight": 1.5,
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "500"
-                },
-                {
-                  "type": "text",
-                  "id": "BGz5v",
-                  "fill": "#94a3b8",
-                  "content": "Ideenbörse",
-                  "lineHeight": 1.5,
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "500"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "XXq7y",
-              "name": "Footer Community",
-              "width": 180,
-              "layout": "vertical",
-              "gap": 10,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "SNy46",
-                  "fill": "#f7fbf3",
-                  "content": "COMMUNITY",
-                  "lineHeight": 1.2,
-                  "fontFamily": "Inter",
-                  "fontSize": 12,
-                  "fontWeight": "700"
-                },
-                {
-                  "type": "text",
-                  "id": "bol8H",
-                  "fill": "#94a3b8",
-                  "content": "Slack",
-                  "lineHeight": 1.5,
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "500"
-                },
-                {
-                  "type": "text",
-                  "id": "B1H9g",
-                  "fill": "#94a3b8",
-                  "content": "GitHub",
-                  "lineHeight": 1.5,
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "500"
-                },
-                {
-                  "type": "text",
-                  "id": "90ZXC",
-                  "fill": "#94a3b8",
-                  "content": "Instagram",
-                  "lineHeight": 1.5,
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "500"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "rqhVl",
-              "name": "Footer Rechtliches",
-              "width": 180,
-              "layout": "vertical",
-              "gap": 10,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "9VApV",
-                  "fill": "#f7fbf3",
-                  "content": "RECHTLICHES",
-                  "lineHeight": 1.2,
-                  "fontFamily": "Inter",
-                  "fontSize": 12,
-                  "fontWeight": "700"
-                },
-                {
-                  "type": "text",
-                  "id": "3PyYZ",
-                  "fill": "#94a3b8",
-                  "content": "Impressum",
-                  "lineHeight": 1.5,
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "500"
-                },
-                {
-                  "type": "text",
-                  "id": "CuhhJ",
-                  "fill": "#94a3b8",
-                  "content": "Datenschutz",
-                  "lineHeight": 1.5,
-                  "fontFamily": "Inter",
-                  "fontSize": 14,
-                  "fontWeight": "500"
-                }
+              "gap": 22,
+              "padding": [
+                36,
+                32,
+                18,
+                32
               ]
             }
           ]
-        },
-        {
-          "type": "frame",
-          "id": "5LxO7",
-          "name": "Footer Bottom",
-          "width": "fill_container",
-          "stroke": {
-            "align": "inside",
-            "thickness": {
-              "top": 1
-            },
-            "fill": "#203043"
-          },
-          "gap": 24,
-          "padding": [
-            18,
-            0,
-            0,
-            0
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "oyXiK",
-              "fill": "#64748b",
-              "content": "© 2026 OpenZirndorf · Entwickelt mit Herz in Zirndorf",
-              "lineHeight": 1.4,
-              "fontFamily": "Inter",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "text",
-              "id": "TsTpl",
-              "fill": "#64748b",
-              "content": "Offen für Ideen, Kritik und Mitarbeit",
-              "lineHeight": 1.4,
-              "fontFamily": "Inter",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "3HB20",
-      "x": 1353,
-      "y": -195,
-      "name": "Website/Hero Badge",
-      "fill": "$--accent",
-      "cornerRadius": 9999,
-      "padding": [
-        8,
-        18
-      ],
-      "justifyContent": "center",
-      "alignItems": "center",
-      "children": [
-        {
-          "type": "text",
-          "id": "otzov",
-          "fill": "$--accent-foreground",
-          "content": "🌱 Civic Tech aus Zirndorf",
-          "lineHeight": 1.2,
-          "fontFamily": "Inter",
-          "fontSize": 12,
-          "fontWeight": "700"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "wSsOC",
-      "x": -516,
-      "y": 190,
-      "name": "Website/Value Card",
-      "reusable": true,
-      "width": 320,
-      "fill": "$--card",
-      "cornerRadius": 12,
-      "stroke": {
-        "align": "inside",
-        "thickness": 1,
-        "fill": "$--border"
-      },
-      "layout": "vertical",
-      "gap": 12,
-      "padding": [
-        16,
-        16,
-        18,
-        16
-      ],
-      "children": [
-        {
-          "type": "text",
-          "id": "tkDA3",
-          "name": "icon",
-          "fill": "$--foreground",
-          "content": "🗳️",
-          "lineHeight": 1,
-          "fontFamily": "Inter",
-          "fontSize": 20,
-          "fontWeight": "normal"
-        },
-        {
-          "type": "text",
-          "id": "1e9aX",
-          "name": "title",
-          "fill": "$--foreground",
-          "textGrowth": "fixed-width",
-          "width": "fill_container",
-          "content": "Wir machen Digitales nutzbar",
-          "lineHeight": 1.35,
-          "fontFamily": "Inter",
-          "fontSize": 15,
-          "fontWeight": "700"
-        },
-        {
-          "type": "text",
-          "id": "wlsIe",
-          "name": "body",
-          "fill": "$--muted-foreground",
-          "textGrowth": "fixed-width",
-          "width": "fill_container",
-          "content": "Wir entwickeln oder erklären Werkzeuge, die konkrete Probleme lösen und für alle verständlich bleiben.",
-          "lineHeight": 1.45,
-          "fontFamily": "Inter",
-          "fontSize": 12,
-          "fontWeight": "normal"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "sknKY",
-      "x": 910,
-      "y": -1142,
-      "name": "Website/Tool Card",
-      "reusable": true,
-      "width": 668,
-      "fill": "#dce9f7",
-      "cornerRadius": 18,
-      "stroke": {
-        "align": "inside",
-        "thickness": 1,
-        "fill": "#d2d9cd"
-      },
-      "layout": "vertical",
-      "gap": 14,
-      "padding": [
-        18,
-        18,
-        20,
-        18
-      ],
-      "children": [
-        {
-          "type": "frame",
-          "id": "H2PLV",
-          "name": "Tool Card Head",
-          "width": "fill_container",
-          "justifyContent": "space_between",
-          "children": [
-            {
-              "type": "frame",
-              "id": "GXpgP",
-              "name": "Icon Badge",
-              "width": 42,
-              "height": 42,
-              "fill": "#ecf3fb",
-              "cornerRadius": 12,
-              "layout": "vertical",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "wfM7U",
-                  "fill": "$--foreground",
-                  "content": "📊",
-                  "lineHeight": 1,
-                  "textAlign": "center",
-                  "textAlignVertical": "middle",
-                  "fontFamily": "Inter",
-                  "fontSize": 20,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "FfRSl",
-              "fill": "$--muted-foreground",
-              "content": "→",
-              "lineHeight": 1,
-              "fontFamily": "Inter",
-              "fontSize": 22,
-              "fontWeight": "500"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "id": "mdF9z",
-          "name": "category",
-          "fill": "#3b6ca8",
-          "content": "KI-ANALYSE",
-          "lineHeight": 1.2,
-          "fontFamily": "Inter",
-          "fontSize": 11,
-          "fontWeight": "700"
-        },
-        {
-          "type": "text",
-          "id": "598SZ",
-          "name": "title",
-          "fill": "$--foreground",
-          "textGrowth": "fixed-width",
-          "width": "fill_container",
-          "content": "Wahlanalyse Zirndorf 2026",
-          "lineHeight": 1.15,
-          "fontFamily": "Inter",
-          "fontSize": 26,
-          "fontWeight": "700"
-        },
-        {
-          "type": "text",
-          "id": "1C3lL",
-          "name": "body",
-          "fill": "$--muted-foreground",
-          "textGrowth": "fixed-width",
-          "width": "fill_container",
-          "content": "KI-gestützte Analyse zur Kommunalwahl 2026. Fragenkatalog, Methodik und Ergebnisse sind vollständig veröffentlicht.",
-          "lineHeight": 1.5,
-          "fontFamily": "Inter",
-          "fontSize": 15,
-          "fontWeight": "normal"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "IWo9p",
-      "x": -473,
-      "y": -301,
-      "name": "Website/Icon Chip",
-      "reusable": true,
-      "fill": "$--background",
-      "cornerRadius": 9999,
-      "stroke": {
-        "align": "inside",
-        "thickness": 1,
-        "fill": "$--border"
-      },
-      "gap": 6,
-      "padding": [
-        4,
-        10
-      ],
-      "alignItems": "center",
-      "children": [
-        {
-          "type": "text",
-          "id": "jScS8",
-          "fill": "$--muted-foreground",
-          "content": "🔓",
-          "lineHeight": 1,
-          "fontFamily": "Inter",
-          "fontSize": 12,
-          "fontWeight": "normal"
-        },
-        {
-          "type": "text",
-          "id": "Ka1jT",
-          "fill": "$--muted-foreground",
-          "content": "Open Source",
-          "lineHeight": 1.2,
-          "fontFamily": "Inter",
-          "fontSize": 12,
-          "fontWeight": "500"
         }
       ]
     }
@@ -5811,6 +6193,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#121821",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -5834,6 +6225,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#0d1117"
+        },
+        {
+          "value": "#f5f7fa",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -5851,6 +6251,15 @@
         },
         {
           "value": "#32910f"
+        },
+        {
+          "value": "#58b22f",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#2d8f0f"
         },
         {
           "value": "#58b22f",
@@ -5880,6 +6289,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#f5fff1",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -5900,6 +6318,15 @@
         },
         {
           "value": "#293429",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#e5e7eb"
+        },
+        {
+          "value": "#2a3441",
           "theme": {
             "Mode": "Dark"
           }
@@ -5926,6 +6353,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#f6f8fa"
+        },
+        {
+          "value": "#171d25",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -5949,6 +6385,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#0d1117"
+        },
+        {
+          "value": "#f5f7fa",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -5969,6 +6414,15 @@
         },
         {
           "value": "#7dc74d",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#2d8f0f"
+        },
+        {
+          "value": "#58b22f",
           "theme": {
             "Mode": "Dark"
           }
@@ -6023,6 +6477,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#0f1419",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6067,6 +6530,15 @@
         },
         {
           "value": "#f4f7f1",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#0d1117"
+        },
+        {
+          "value": "#f5f7fa",
           "theme": {
             "Mode": "Dark"
           }
@@ -6121,6 +6593,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#151b23",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6165,6 +6646,15 @@
         },
         {
           "value": "#f4f7f1",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#0d1117"
+        },
+        {
+          "value": "#f5f7fa",
           "theme": {
             "Mode": "Dark"
           }
@@ -6219,6 +6709,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#151b23",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6263,6 +6762,15 @@
         },
         {
           "value": "#f4f7f1",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#0d1117"
+        },
+        {
+          "value": "#f5f7fa",
           "theme": {
             "Mode": "Dark"
           }
@@ -6432,6 +6940,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#2d8f0f"
+        },
+        {
+          "value": "#58b22f",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6525,6 +7042,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#f5fff1",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6576,6 +7102,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#f6f8fa"
+        },
+        {
+          "value": "#1b232d",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6620,6 +7155,15 @@
         },
         {
           "value": "#e7f2de",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#0d1117"
+        },
+        {
+          "value": "#f5f7fa",
           "theme": {
             "Mode": "Dark"
           }
@@ -6671,6 +7215,15 @@
         },
         {
           "value": "#171d18",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#f6f8fa"
+        },
+        {
+          "value": "#171d25",
           "theme": {
             "Mode": "Dark"
           }
@@ -6749,6 +7302,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#6b7280"
+        },
+        {
+          "value": "#9aa4b2",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6800,6 +7362,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#f6f8fa"
+        },
+        {
+          "value": "#171d25",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6847,6 +7418,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#0d1117"
+        },
+        {
+          "value": "#f5f7fa",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6858,6 +7438,15 @@
         },
         {
           "value": "#ff666999",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#d92c20"
+        },
+        {
+          "value": "#ff6b5f",
           "theme": {
             "Mode": "Dark"
           }
@@ -6908,6 +7497,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#e5e7eb"
+        },
+        {
+          "value": "#2a3441",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6952,6 +7550,15 @@
         },
         {
           "value": "#243024",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#e5e7eb"
+        },
+        {
+          "value": "#2a3441",
           "theme": {
             "Mode": "Dark"
           }
@@ -7121,6 +7728,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#2d8f0f"
+        },
+        {
+          "value": "#58b22f",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -7131,6 +7747,94 @@
     "--black": {
       "type": "color",
       "value": "#000000"
+    },
+    "--bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#0f1419",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--bg-alt": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#f6f8fa"
+        },
+        {
+          "value": "#171d25",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--blue": {
+      "type": "color",
+      "value": "#0969da"
+    },
+    "--blue-light": {
+      "type": "color",
+      "value": "#e8f4ff"
+    },
+    "--green": {
+      "type": "color",
+      "value": "#2d8f0f"
+    },
+    "--green-dark": {
+      "type": "color",
+      "value": "#1a5208"
+    },
+    "--green-hover": {
+      "type": "color",
+      "value": "#267a0c"
+    },
+    "--green-light": {
+      "type": "color",
+      "value": "#eef7e6"
+    },
+    "--orange": {
+      "type": "color",
+      "value": "#d96020"
+    },
+    "--orange-light": {
+      "type": "color",
+      "value": "#fff4eb"
+    },
+    "--text": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#0d1117"
+        },
+        {
+          "value": "#f5f7fa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--text-muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#6b7280"
+        },
+        {
+          "value": "#9aa4b2",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
     }
   }
 }

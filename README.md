@@ -20,6 +20,22 @@ pnpm storybook
 pnpm build-storybook
 ```
 
+## GitHub Actions
+
+- `CI` validates lint, typecheck, tests, package builds, and Storybook builds on pull requests and `main`.
+- `Publish Packages` uses Changesets to open or update a release PR and publishes scoped packages to GitHub Packages from `main`.
+- `Deploy Storybook` builds Storybook with a repository-aware base path and deploys it to GitHub Pages.
+
+### GitHub Packages prerequisite
+
+GitHub Packages npm publishing is namespace-based. The package scope and the GitHub namespace must match, so `@openzirndorf/*` publishing requires the repository to live under the `openzirndorf` user or organization, or the package scope to be renamed accordingly.
+
+Consumers installing from GitHub Packages also need an `.npmrc` entry for the package scope:
+
+```ini
+@openzirndorf:registry=https://npm.pkg.github.com
+```
+
 ## shadcn workflow
 
 Add or update components from inside the UI package:

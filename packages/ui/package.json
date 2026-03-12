@@ -2,6 +2,7 @@
   "name": "@openzirndorf/ui",
   "version": "0.0.0",
   "type": "module",
+  "repository": "https://github.com/Danny02/openzirndorf-design-system.git",
   "sideEffects": [
     "**/*.css"
   ],
@@ -25,18 +26,24 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "lint": "biome check src tsup.config.ts vitest.config.ts",
+    "prepack": "pnpm build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "dependencies": {
+    "@openzirndorf/brand": "workspace:*",
     "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.577.0",
+    "radix-ui": "^1.4.3",
     "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.1"
   },

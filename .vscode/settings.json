@@ -1,5 +1,7 @@
 {
     "chat.tools.terminal.autoApprove": {
-        "corepack": true
+        "corepack": true,
+        "pushd": true,
+        "asdf": true
     }
 }

@@ -1,0 +1,24 @@
+{
+  "name": "@openzirndorf/brand",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "optimize-assets": "node ./scripts/optimize-assets.mjs"
+  },
+  "repository": "https://github.com/Danny02/openzirndorf-design-system.git",
+  "files": [
+    "src/assets",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "exports": {
+    "./logos/*": "./src/assets/logos/*",
+    "./favicons/*": "./src/assets/favicons/*",
+    "./mascots/*": "./src/assets/mascots/*"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.4"
+  }
+}

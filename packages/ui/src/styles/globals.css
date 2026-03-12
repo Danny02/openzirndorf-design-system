@@ -1,47 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900&family=Montserrat:wght@700;800;900&display=swap");
 @import "tailwindcss";
 
 @source "../**/*.{ts,tsx}";
 
 :root {
-  --green: #2d8f0f;
-  --green-hover: #267a0c;
-  --green-light: #eef7e6;
-  --green-dark: #1a5208;
-  --orange: #d96020;
-  --orange-light: #fff4eb;
+  /*
+   * BRAND - Official Zirndorf city colors.
+   * Do not change these values locally. If the brand palette changes,
+   * update the source design tokens and the pen file first.
+   */
+  --oz-brand-green: #009A00;
+  --oz-brand-green-hover: #007A00;
+  --oz-brand-green-dark: #006600;
+  --oz-brand-dark: #1F2937;
+  --oz-brand-red: #FF0000;
+  --oz-brand-orange: #D96020;
+
+  --oz-text-primary: #1f2937;
+  --oz-text-secondary: #6b7280;
+  --oz-text-inverse: #ffffff;
+  --oz-text-disabled: #9ca3af;
+
+  --oz-bg-primary: #ffffff;
+  --oz-bg-surface: #f3f4f6;
+  --oz-bg-subtle: #e5e7eb;
+  --oz-bg-brand: #009a00;
+  --oz-bg-dark: #1f2937;
+  --oz-bg-green: #eef7e6;
+  --oz-bg-orange: #fff4eb;
+
+  --oz-color-success: #15803d;
+  --oz-color-warning: #b45309;
+  --oz-color-error: #b91c1c;
+  --oz-color-info: #1d4ed8;
+  --oz-accent-red: #ff0000;
+
+  --oz-font-heading: "Montserrat", sans-serif;
+  --oz-font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --oz-font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  --oz-font-size-xs: 0.75rem;
+  --oz-font-size-sm: 0.875rem;
+  --oz-font-size-base: 1rem;
+  --oz-font-size-lg: 1.125rem;
+  --oz-font-size-xl: 1.25rem;
+  --oz-font-size-2xl: 1.5rem;
+  --oz-font-size-3xl: 1.875rem;
+  --oz-font-size-4xl: 2.25rem;
+
+  --oz-font-weight-normal: 400;
+  --oz-font-weight-medium: 500;
+  --oz-font-weight-bold: 700;
+
+  --oz-line-height-tight: 1.25;
+  --oz-line-height-base: 1.6;
+  --oz-line-height-relaxed: 1.75;
+
+  --oz-space-1: 0.25rem;
+  --oz-space-2: 0.5rem;
+  --oz-space-3: 0.75rem;
+  --oz-space-4: 1rem;
+  --oz-space-5: 1.25rem;
+  --oz-space-6: 1.5rem;
+  --oz-space-8: 2rem;
+  --oz-space-10: 2.5rem;
+  --oz-space-12: 3rem;
+  --oz-space-16: 4rem;
+
+  --oz-radius-sm: 4px;
+  --oz-radius: 8px;
+  --oz-radius-lg: 16px;
+  --oz-radius-xl: 24px;
+  --oz-radius-full: 9999px;
+
+  --oz-shadow-sm: 0 1px 3px rgb(0 0 0 / 0.08);
+  --oz-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  --oz-shadow-lg: 0 8px 24px rgb(0 0 0 / 0.12);
+  --oz-shadow-xl: 0 16px 48px rgb(0 0 0 / 0.16);
+
+  --oz-max-width: 1200px;
+  --oz-max-width-prose: 680px;
+  --oz-header-height: 64px;
+
+  --oz-transition-fast: 150ms ease;
+  --oz-transition-base: 250ms ease;
+  --oz-transition-slow: 400ms ease;
+
+  --oz-z-base: 0;
+  --oz-z-raised: 10;
+  --oz-z-dropdown: 100;
+  --oz-z-sticky: 200;
+  --oz-z-modal: 300;
+  --oz-z-toast: 400;
+
+  --green: var(--oz-brand-green);
+  --green-hover: var(--oz-brand-green-hover);
+  --green-light: var(--oz-bg-green);
+  --green-dark: var(--oz-brand-green-dark);
+  --orange: var(--oz-brand-orange);
+  --orange-light: var(--oz-bg-orange);
   --blue: #0969da;
   --blue-light: #e8f4ff;
-  --text: #0d1117;
-  --text-muted: #6b7280;
-  --bg: #ffffff;
-  --bg-alt: #f6f8fa;
+  --text: var(--oz-text-primary);
+  --text-muted: var(--oz-text-secondary);
+  --bg: var(--oz-bg-primary);
+  --bg-alt: var(--oz-bg-surface);
   --background: var(--bg);
   --foreground: var(--text);
-  --card: #ffffff;
+  --card: var(--oz-bg-primary);
   --card-foreground: var(--text);
-  --popover: #ffffff;
+  --popover: var(--oz-bg-primary);
   --popover-foreground: var(--text);
   --primary: var(--green);
-  --primary-foreground: #ffffff;
+  --primary-foreground: var(--oz-text-inverse);
   --secondary: var(--bg-alt);
   --secondary-foreground: var(--text);
-  --muted: var(--bg-alt);
+  --muted: var(--oz-bg-subtle);
   --muted-foreground: var(--text-muted);
-  --accent: var(--bg-alt);
+  --accent: var(--oz-bg-surface);
   --accent-foreground: var(--text);
-  --destructive: #d92c20;
-  --border: #e5e7eb;
-  --input: #e5e7eb;
+  --destructive: var(--oz-color-error);
+  --border: var(--oz-bg-subtle);
+  --input: var(--oz-bg-subtle);
   --ring: var(--green);
-  --sidebar: #ffffff;
+  --sidebar: var(--oz-bg-primary);
   --sidebar-foreground: var(--text);
   --sidebar-primary: var(--green);
-  --sidebar-primary-foreground: #ffffff;
+  --sidebar-primary-foreground: var(--oz-text-inverse);
   --sidebar-accent: var(--bg-alt);
   --sidebar-accent-foreground: var(--text);
-  --sidebar-border: #e5e7eb;
+  --sidebar-border: var(--oz-bg-subtle);
   --sidebar-ring: var(--green);
-  --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.08);
+  --shadow-sm: var(--oz-shadow-sm);
   --shadow: 0 4px 16px rgb(0 0 0 / 0.08), 0 1px 4px rgb(0 0 0 / 0.04);
   --shadow-hover: 0 8px 32px rgb(0 0 0 / 0.12), 0 2px 8px rgb(0 0 0 / 0.06);
   --container: min(1160px, calc(100% - 2.5rem));
@@ -52,42 +142,53 @@
 }
 
 .dark {
-  --text: #f5f7fa;
-  --text-muted: #9aa4b2;
-  --bg: #0f1419;
-  --bg-alt: #171d25;
+  --oz-text-primary: #f9fafb;
+  --oz-text-secondary: #9ca3af;
+  --oz-text-inverse: #1f2937;
+  --oz-bg-primary: #111827;
+  --oz-bg-surface: #1f2937;
+  --oz-bg-subtle: #374151;
+
+  --text: var(--oz-text-primary);
+  --text-muted: var(--oz-text-secondary);
+  --bg: var(--oz-bg-primary);
+  --bg-alt: var(--oz-bg-surface);
   --background: var(--bg);
   --foreground: var(--text);
-  --card: #151b23;
+  --card: var(--oz-bg-surface);
   --card-foreground: var(--text);
-  --popover: #151b23;
+  --popover: var(--oz-bg-surface);
   --popover-foreground: var(--text);
-  --primary: #58b22f;
-  --primary-foreground: #f5fff1;
-  --secondary: #1b232d;
+  --primary: var(--green);
+  --primary-foreground: var(--oz-text-inverse);
+  --secondary: var(--oz-bg-surface);
   --secondary-foreground: var(--text);
-  --muted: var(--bg-alt);
+  --muted: var(--oz-bg-subtle);
   --muted-foreground: var(--text-muted);
-  --accent: var(--bg-alt);
+  --accent: var(--oz-bg-surface);
   --accent-foreground: var(--text);
-  --destructive: #ff6b5f;
-  --border: #2a3441;
-  --input: #2a3441;
-  --ring: #58b22f;
-  --sidebar: #121821;
+  --destructive: var(--oz-color-error);
+  --border: var(--oz-bg-subtle);
+  --input: var(--oz-bg-subtle);
+  --ring: var(--green);
+  --sidebar: var(--oz-bg-primary);
   --sidebar-foreground: var(--text);
-  --sidebar-primary: #58b22f;
-  --sidebar-primary-foreground: #f5fff1;
-  --sidebar-accent: #171d25;
+  --sidebar-primary: var(--green);
+  --sidebar-primary-foreground: var(--oz-text-inverse);
+  --sidebar-accent: var(--oz-bg-surface);
   --sidebar-accent-foreground: var(--text);
-  --sidebar-border: #2a3441;
-  --sidebar-ring: #58b22f;
+  --sidebar-border: var(--oz-bg-subtle);
+  --sidebar-ring: var(--green);
   --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.28);
   --shadow: 0 10px 30px rgb(0 0 0 / 0.32);
   --shadow-hover: 0 18px 48px rgb(0 0 0 / 0.38);
 }
 
 @theme inline {
+  --font-body: var(--oz-font-body);
+  --font-heading: var(--oz-font-heading);
+  --font-mono: var(--oz-font-mono);
+  --font-sans: var(--oz-font-body);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -118,10 +219,15 @@
   --color-brand-green-hover: var(--green-hover);
   --color-brand-green-light: var(--green-light);
   --color-brand-green-dark: var(--green-dark);
+  --color-brand-dark: var(--oz-brand-dark);
+  --color-brand-red: var(--oz-brand-red);
   --color-brand-orange: var(--orange);
   --color-brand-orange-light: var(--orange-light);
   --color-brand-blue: var(--blue);
   --color-brand-blue-light: var(--blue-light);
+  --color-success: var(--oz-color-success);
+  --color-warning: var(--oz-color-warning);
+  --color-info: var(--oz-color-info);
   --spacing-container: var(--container);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -136,7 +242,15 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family:
-      "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: var(--oz-font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--oz-font-heading);
   }
 }

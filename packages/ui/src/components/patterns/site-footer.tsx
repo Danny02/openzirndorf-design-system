@@ -43,7 +43,7 @@ export function SiteFooter({
   className,
 }: SiteFooterProps) {
   return (
-    <footer className={cn("bg-foreground text-white/80", className)}>
+    <footer className={cn("bg-brand-dark text-white/80", className)}>
       <div className="mx-auto grid w-full max-w-(--container) gap-12 px-5 py-12 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
         <div className="space-y-3">
           <div className="inline-flex items-center gap-2">

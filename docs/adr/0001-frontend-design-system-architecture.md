@@ -79,7 +79,7 @@ Pencil.dev design  -->  AI-generated tokens  -->  packages/ui/tokens
 
 Based on current CI decisions (#logo-homepage-ci):
 
-- **Font:** Montserrat (bold)
+- **Fonts:** Montserrat for headings, Inter for body copy
 - **Colors:** #009A00 (Zirndorf green), #1F2937 (dark gray), #FF0000 (accent red)
 
 These are defined as design tokens in `packages/ui` and consumed via Tailwind CSS configuration.

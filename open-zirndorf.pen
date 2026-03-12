@@ -4509,7 +4509,7 @@
         "Mode": "Light"
       },
       "width": 1512,
-      "fill": "#f1f7ec",
+      "fill": "$--background",
       "layout": "vertical",
       "gap": 28,
       "padding": 36,
@@ -4519,12 +4519,12 @@
           "id": "m6Sh1",
           "name": "Pattern Inventory",
           "width": "fill_container",
-          "fill": "#ffffff",
+          "fill": "$--card",
           "cornerRadius": 28,
           "stroke": {
             "align": "inside",
             "thickness": 1,
-            "fill": "#dce6d7"
+            "fill": "$--border"
           },
           "layout": "vertical",
           "gap": 20,
@@ -4539,7 +4539,7 @@
               "type": "text",
               "id": "vS62F",
               "name": "eyebrow",
-              "fill": "#6b7280",
+              "fill": "$--muted-foreground",
               "content": "PATTERN INVENTORY",
               "lineHeight": 1.2,
               "fontFamily": "Inter",
@@ -4550,7 +4550,7 @@
               "type": "text",
               "id": "i50cZ",
               "name": "title",
-              "fill": "#0d1117",
+              "fill": "$--foreground",
               "content": "OpenZirndorf patterns showcase",
               "lineHeight": 1.1,
               "fontFamily": "Inter",
@@ -4561,7 +4561,7 @@
               "type": "text",
               "id": "Lam6c",
               "name": "body",
-              "fill": "#4b5563",
+              "fill": "$--muted-foreground",
               "textGrowth": "fixed-width",
               "width": "fill_container",
               "content": "Clean source-of-truth page composed from the existing website patterns. This surface now preserves the site header, hero/page header, pillar cards, feature cards, event cards and footer, while also surfacing the missing brand logo and mascot assets.",
@@ -4582,12 +4582,12 @@
                   "id": "gYEqH",
                   "name": "Brand Logo Asset",
                   "width": "fill_container",
-                  "fill": "#f7fbf3",
+                  "fill": "$--secondary",
                   "cornerRadius": 20,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "#d8e3d0"
+                    "fill": "$--border"
                   },
                   "layout": "vertical",
                   "gap": 14,
@@ -4610,7 +4610,7 @@
                       "type": "text",
                       "id": "AdWpo",
                       "name": "logoText",
-                      "fill": "#4b5563",
+                      "fill": "$--muted-foreground",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "BrandLogo asset used for header, navigation, footer and hero sizes.",
@@ -4626,12 +4626,12 @@
                   "id": "jpPKG",
                   "name": "Mascot Assets",
                   "width": "fill_container",
-                  "fill": "#f7fbf3",
+                  "fill": "$--secondary",
                   "cornerRadius": 20,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "#d8e3d0"
+                    "fill": "$--border"
                   },
                   "layout": "vertical",
                   "gap": 14,
@@ -4676,7 +4676,7 @@
                       "type": "text",
                       "id": "L8Huz",
                       "name": "mascotText",
-                      "fill": "#4b5563",
+                      "fill": "$--muted-foreground",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "Mascot family added back into the source surface. Current asset set includes Fynn, Kreiselix, Nico, Quirin and Tuxi.",
@@ -4697,12 +4697,12 @@
           "name": "Website Pattern Page",
           "clip": true,
           "width": "fill_container",
-          "fill": "#ffffff",
+          "fill": "$--background",
           "cornerRadius": 32,
           "stroke": {
             "align": "inside",
             "thickness": 1,
-            "fill": "#dce6d7"
+            "fill": "$--border"
           },
           "layout": "vertical",
           "children": [
@@ -5833,7 +5833,7 @@
               "id": "hi8zG",
               "name": "join",
               "width": "fill_container",
-              "fill": "#f6f8fa",
+              "fill": "$--background",
               "layout": "vertical",
               "gap": 24,
               "padding": [
@@ -5845,7 +5845,7 @@
                   "type": "text",
                   "id": "IWtCr",
                   "name": "joinTitle",
-                  "fill": "#0d1117",
+                  "fill": "$--foreground",
                   "content": "Einstieg leicht gemacht",
                   "lineHeight": 1.08,
                   "fontFamily": "Inter",
@@ -5856,7 +5856,7 @@
                   "type": "text",
                   "id": "pJghc",
                   "name": "joinBody",
-                  "fill": "#6b7280",
+                  "fill": "$--muted-foreground",
                   "content": "Community- und Kontaktmuster für Beteiligung, Einstieg und direkte Ansprache.",
                   "lineHeight": 1.5,
                   "fontFamily": "Inter",
@@ -6205,6 +6205,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#111827",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6234,6 +6243,15 @@
         },
         {
           "value": "#f5f7fa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#1F2937"
+        },
+        {
+          "value": "#F9FAFB",
           "theme": {
             "Mode": "Dark"
           }
@@ -6269,6 +6287,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#009A00"
+        },
+        {
+          "value": "#009A00",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6298,6 +6325,15 @@
         },
         {
           "value": "#f5fff1",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#1F2937",
           "theme": {
             "Mode": "Dark"
           }
@@ -6333,6 +6369,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#E5E7EB"
+        },
+        {
+          "value": "#374151",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6362,6 +6407,15 @@
         },
         {
           "value": "#171d25",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#F3F4F6"
+        },
+        {
+          "value": "#1F2937",
           "theme": {
             "Mode": "Dark"
           }
@@ -6397,6 +6451,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#1F2937"
+        },
+        {
+          "value": "#F9FAFB",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6426,6 +6489,15 @@
         },
         {
           "value": "#58b22f",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#009A00"
+        },
+        {
+          "value": "#009A00",
           "theme": {
             "Mode": "Dark"
           }
@@ -6489,6 +6561,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#111827",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6542,6 +6623,15 @@
         },
         {
           "value": "#f5f7fa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#1F2937"
+        },
+        {
+          "value": "#F9FAFB",
           "theme": {
             "Mode": "Dark"
           }
@@ -6605,6 +6695,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#1F2937",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6658,6 +6757,15 @@
         },
         {
           "value": "#f5f7fa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#1F2937"
+        },
+        {
+          "value": "#F9FAFB",
           "theme": {
             "Mode": "Dark"
           }
@@ -6721,6 +6829,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#1F2937",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -6774,6 +6891,15 @@
         },
         {
           "value": "#f5f7fa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#1F2937"
+        },
+        {
+          "value": "#F9FAFB",
           "theme": {
             "Mode": "Dark"
           }
@@ -6952,6 +7078,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#009A00"
+        },
+        {
+          "value": "#009A00",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -7054,6 +7189,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#1F2937",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -7114,6 +7258,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#F3F4F6"
+        },
+        {
+          "value": "#1F2937",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -7167,6 +7320,15 @@
         },
         {
           "value": "#f5f7fa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#1F2937"
+        },
+        {
+          "value": "#F9FAFB",
           "theme": {
             "Mode": "Dark"
           }
@@ -7227,6 +7389,15 @@
         },
         {
           "value": "#171d25",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#E5E7EB"
+        },
+        {
+          "value": "#374151",
           "theme": {
             "Mode": "Dark"
           }
@@ -7314,6 +7485,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#6B7280"
+        },
+        {
+          "value": "#9CA3AF",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -7374,6 +7554,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#F3F4F6"
+        },
+        {
+          "value": "#1F2937",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -7430,6 +7619,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#1F2937"
+        },
+        {
+          "value": "#F9FAFB",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -7450,6 +7648,15 @@
         },
         {
           "value": "#ff6b5f",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#B91C1C"
+        },
+        {
+          "value": "#B91C1C",
           "theme": {
             "Mode": "Dark"
           }
@@ -7509,6 +7716,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#E5E7EB"
+        },
+        {
+          "value": "#374151",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -7562,6 +7778,15 @@
         },
         {
           "value": "#2a3441",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#E5E7EB"
+        },
+        {
+          "value": "#374151",
           "theme": {
             "Mode": "Dark"
           }
@@ -7740,6 +7965,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#009A00"
+        },
+        {
+          "value": "#009A00",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -7762,6 +7996,15 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#111827",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
@@ -7776,40 +8019,105 @@
           "theme": {
             "Mode": "Dark"
           }
+        },
+        {
+          "value": "#F3F4F6"
+        },
+        {
+          "value": "#1F2937",
+          "theme": {
+            "Mode": "Dark"
+          }
         }
       ]
     },
     "--blue": {
       "type": "color",
-      "value": "#0969da"
+      "value": [
+        {
+          "value": "#0969da"
+        },
+        {
+          "value": "#0969DA"
+        }
+      ]
     },
     "--blue-light": {
       "type": "color",
-      "value": "#e8f4ff"
+      "value": [
+        {
+          "value": "#e8f4ff"
+        },
+        {
+          "value": "#E8F4FF"
+        }
+      ]
     },
     "--green": {
       "type": "color",
-      "value": "#2d8f0f"
+      "value": [
+        {
+          "value": "#2d8f0f"
+        },
+        {
+          "value": "#009A00"
+        }
+      ]
     },
     "--green-dark": {
       "type": "color",
-      "value": "#1a5208"
+      "value": [
+        {
+          "value": "#1a5208"
+        },
+        {
+          "value": "#006600"
+        }
+      ]
     },
     "--green-hover": {
       "type": "color",
-      "value": "#267a0c"
+      "value": [
+        {
+          "value": "#267a0c"
+        },
+        {
+          "value": "#007A00"
+        }
+      ]
     },
     "--green-light": {
       "type": "color",
-      "value": "#eef7e6"
+      "value": [
+        {
+          "value": "#eef7e6"
+        },
+        {
+          "value": "#EEF7E6"
+        }
+      ]
     },
     "--orange": {
       "type": "color",
-      "value": "#d96020"
+      "value": [
+        {
+          "value": "#d96020"
+        },
+        {
+          "value": "#D96020"
+        }
+      ]
     },
     "--orange-light": {
       "type": "color",
-      "value": "#fff4eb"
+      "value": [
+        {
+          "value": "#fff4eb"
+        },
+        {
+          "value": "#FFF4EB"
+        }
+      ]
     },
     "--text": {
       "type": "color",
@@ -7819,6 +8127,15 @@
         },
         {
           "value": "#f5f7fa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#1F2937"
+        },
+        {
+          "value": "#F9FAFB",
           "theme": {
             "Mode": "Dark"
           }
@@ -7833,6 +8150,163 @@
         },
         {
           "value": "#9aa4b2",
+          "theme": {
+            "Mode": "Dark"
+          }
+        },
+        {
+          "value": "#6B7280"
+        },
+        {
+          "value": "#9CA3AF",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--oz-accent-red": {
+      "type": "color",
+      "value": "#FF0000"
+    },
+    "--oz-bg-brand": {
+      "type": "color",
+      "value": "#009A00"
+    },
+    "--oz-bg-dark": {
+      "type": "color",
+      "value": "#1F2937"
+    },
+    "--oz-bg-green": {
+      "type": "color",
+      "value": "#EEF7E6"
+    },
+    "--oz-bg-orange": {
+      "type": "color",
+      "value": "#FFF4EB"
+    },
+    "--oz-bg-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#111827",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--oz-bg-subtle": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E5E7EB"
+        },
+        {
+          "value": "#374151",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--oz-bg-surface": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F3F4F6"
+        },
+        {
+          "value": "#1F2937",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--oz-brand-dark": {
+      "type": "color",
+      "value": "#1F2937"
+    },
+    "--oz-brand-green": {
+      "type": "color",
+      "value": "#009A00"
+    },
+    "--oz-brand-green-dark": {
+      "type": "color",
+      "value": "#006600"
+    },
+    "--oz-brand-green-hover": {
+      "type": "color",
+      "value": "#007A00"
+    },
+    "--oz-brand-orange": {
+      "type": "color",
+      "value": "#D96020"
+    },
+    "--oz-brand-red": {
+      "type": "color",
+      "value": "#FF0000"
+    },
+    "--oz-color-error": {
+      "type": "color",
+      "value": "#B91C1C"
+    },
+    "--oz-color-info": {
+      "type": "color",
+      "value": "#1D4ED8"
+    },
+    "--oz-color-success": {
+      "type": "color",
+      "value": "#15803D"
+    },
+    "--oz-color-warning": {
+      "type": "color",
+      "value": "#B45309"
+    },
+    "--oz-text-disabled": {
+      "type": "color",
+      "value": "#9CA3AF"
+    },
+    "--oz-text-inverse": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#1F2937",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--oz-text-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#1F2937"
+        },
+        {
+          "value": "#F9FAFB",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--oz-text-secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#6B7280"
+        },
+        {
+          "value": "#9CA3AF",
           "theme": {
             "Mode": "Dark"
           }

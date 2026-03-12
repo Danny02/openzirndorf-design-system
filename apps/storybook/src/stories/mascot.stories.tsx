@@ -55,7 +55,10 @@ export const Sizes: Story = {
   render: () => (
     <div className="flex flex-wrap items-end gap-8 rounded-lg bg-secondary/35 p-8">
       {(["sm", "md", "lg", "xl"] as const).map((size) => (
-        <div key={size} className="flex flex-col items-center gap-4 text-center">
+        <div
+          key={size}
+          className="flex flex-col items-center gap-4 text-center"
+        >
           <Mascot name="tuxi" size={size} decorative={false} />
           <p className="text-sm font-semibold uppercase tracking-[0.05em] text-muted-foreground">
             {size}

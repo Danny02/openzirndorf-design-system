@@ -35,11 +35,15 @@ export const Presets: Story = {
         <BrandLogo size="header" />
       </div>
       <div className="space-y-3">
-        <p className="text-sm font-semibold text-muted-foreground">Navigation</p>
+        <p className="text-sm font-semibold text-muted-foreground">
+          Navigation
+        </p>
         <BrandLogo size="nav" />
       </div>
       <div className="space-y-3">
-        <p className="text-sm font-semibold text-muted-foreground">Footer mark</p>
+        <p className="text-sm font-semibold text-muted-foreground">
+          Footer mark
+        </p>
         <BrandLogo size="footerMark" />
       </div>
       <div className="space-y-3">

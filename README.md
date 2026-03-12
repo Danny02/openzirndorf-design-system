@@ -1,4 +1,4 @@
-# Open Zirndorf Design System
+# Open Zirndorf Apps
 
 Shared React component library for Open Zirndorf apps.
 
@@ -23,14 +23,14 @@ pnpm build-storybook
 ## GitHub Actions
 
 - `CI` validates lint, typecheck, tests, package builds, and Storybook builds on pull requests and `main`.
-- `Publish Packages` uses Changesets to open or update a release PR and publishes scoped packages to GitHub Packages from `main`.
+- `Publish Packages` runs on `main` via Changesets, opens or updates a release PR when needed, and publishes scoped packages to GitHub Packages once versions are ready.
 - `Deploy Storybook` builds Storybook with a repository-aware base path and deploys it to GitHub Pages.
 
-### GitHub Packages prerequisite
+### GitHub Packages
 
-GitHub Packages npm publishing is namespace-based. The package scope and the GitHub namespace must match, so `@openzirndorf/*` publishing requires the repository to live under the `openzirndorf` user or organization, or the package scope to be renamed accordingly.
+This workspace is configured to publish `@openzirndorf/*` packages from the `openzirndorf/openzirndorf-apps` repository to GitHub Packages.
 
-Consumers installing from GitHub Packages also need an `.npmrc` entry for the package scope:
+Consumers installing from GitHub Packages need an `.npmrc` entry for the package scope. Authentication can be provided with `NODE_AUTH_TOKEN` or a user-level npm config entry when installing or publishing:
 
 ```ini
 @openzirndorf:registry=https://npm.pkg.github.com

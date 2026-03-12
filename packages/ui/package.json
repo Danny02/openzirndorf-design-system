@@ -2,7 +2,7 @@
   "name": "@openzirndorf/ui",
   "version": "0.0.0",
   "type": "module",
-  "repository": "https://github.com/Danny02/openzirndorf-design-system.git",
+  "repository": "https://github.com/openzirndorf/openzirndorf-apps.git",
   "sideEffects": [
     "**/*.css"
   ],

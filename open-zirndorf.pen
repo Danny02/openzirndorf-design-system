@@ -4505,6 +4505,9 @@
       "x": 3099,
       "y": 113,
       "name": "openzirndorf-patterns-showcase",
+      "theme": {
+        "Mode": "Light"
+      },
       "width": 1512,
       "fill": "#f1f7ec",
       "layout": "vertical",

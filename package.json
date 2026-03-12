@@ -1,6 +1,7 @@
 {
-  "name": "openzirndorf-design-system",
+  "name": "openzirndorf-apps",
   "private": true,
+  "repository": "https://github.com/openzirndorf/openzirndorf-apps.git",
   "packageManager": "pnpm@10.32.1",
   "scripts": {
     "build": "turbo run build",

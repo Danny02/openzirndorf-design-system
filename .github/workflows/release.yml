@@ -1,13 +1,13 @@
 name: Publish Packages
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
   release:
-    # GitHub Packages publishing is disabled until the repository moves to the
-    # openzirndorf namespace and package scope/owner alignment is resolved.
-    if: false
     runs-on: ubuntu-latest
     permissions:
       contents: write
